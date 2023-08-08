@@ -1,0 +1,22 @@
+<html>
+<body>
+<h1> From IP {{ip}} </h1>
+<input type="text" name= "username" id="uname" >
+<button onclick="reg();"> Register </button>
+<button onclick="auth();"> Authenticate</button>
+<script>
+function reg()
+{
+var name=document.getElementById("uname").value;
+var url="/reg?username="+name;
+window.location.href=url;
+}
+
+function auth()
+{
+var name=document.getElementById("uname").value;
+var url="/auth?username="+name;
+window.location.href=url;
+}
+</script>  
+</html>
